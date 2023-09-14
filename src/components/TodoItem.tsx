@@ -1,8 +1,6 @@
-const TodoItem: React.FC<todoItemProps> = ({ text }) => {
-  return <li>{text}</li>;
+export default function TodoItem(props: todoItemProps) {
+  return <li>{props.text}</li>;
 };
-
-export default TodoItem;
 
 interface todoItemProps {
   text: string;
